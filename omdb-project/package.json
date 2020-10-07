@@ -2,13 +2,23 @@
   "name": "omdb-project",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Ashari Muhammad H",
+    "email": "asharimh97@gmail.com",
+    "url": "https://iamashari.space"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "styled-components": "^5.2.0",
+    "styled-system": "^5.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "9.8.6",
+    "postcss-cli": "^8.0.0",
+    "tailwindcss": "^1.8.11"
   }
 }
