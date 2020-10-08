@@ -49,7 +49,10 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/testing-library__jest-dom": "^5.9.4",
     "autoprefixer": "9.8.6",
+    "moxios": "^0.4.0",
     "postcss-cli": "^8.0.0",
     "tailwindcss": "^1.8.11"
   }
