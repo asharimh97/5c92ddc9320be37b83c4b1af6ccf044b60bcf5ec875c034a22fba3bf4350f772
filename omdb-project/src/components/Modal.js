@@ -55,7 +55,7 @@ const Content = styled.div`
     `}
 `;
 
-const Modal = ({ visible, id, children, onClose, width }) => {
+const Modal = ({ visible, id, children, onClose, width, ...props }) => {
   const componentId = id;
 
   const handleOutsideClick = e => {
@@ -75,7 +75,12 @@ const Modal = ({ visible, id, children, onClose, width }) => {
   });
 
   const element = (
-    <Overlay id={componentId} data-testid="modal-overlay" visible={visible}>
+    <Overlay
+      id={componentId}
+      data-testid="modal-overlay"
+      visible={visible}
+      {...props}
+    >
       <Content data-testid="modal-content" visible={visible} width={width}>
         {children}
       </Content>
