@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CardMovie = ({ movie, onClickPoster, ...props }) => {
   const { Title, imdbID: id, Poster } = movie;
   return (
-    <div data-testid="movie-card" className="w-full">
+    <div data-testid="movie-card" className="w-full" {...props}>
       <div
         data-testid="movie-thumbnail"
         className="relative w-full h-56 mb-3"
