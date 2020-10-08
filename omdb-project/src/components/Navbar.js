@@ -1,11 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Container from "./Container";
 import { Link } from "react-router-dom";
 
 const Navbar = props => {
   return (
-    <header data-testid="header-navbar">
+    <header data-testid="header-navbar" {...props}>
       <Container className="flex justify-between items-center py-4">
         <Link to="/" data-testid="navbar-brand" className="uppercase font-bold">
           Movie List
